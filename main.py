@@ -9,7 +9,7 @@ st.set_page_config(page_title="UK Crime Dashboard", layout="wide")
 
 @st.cache_data(show_spinner=True)
 def load_data():
-    file_path = "/Users/ananttamrakar/Downloads/UK Crime data/Master_file_cleaned.xlsx"
+    file_path =  'Master_file_cleaned.xlsb'
     df = pd.read_excel(file_path)
     df.dropna(subset=["Longitude", "Latitude"], inplace=True)
     df["Month"] = pd.to_datetime(df["Month"], format="%Y-%m", errors="coerce")
