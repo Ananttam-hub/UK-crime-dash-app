@@ -3,5 +3,4 @@ plotly
 pandas
 scikit-learn
 pydeck 
-sklearn.linear_model
 numpy
